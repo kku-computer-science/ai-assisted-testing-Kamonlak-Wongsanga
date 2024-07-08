@@ -10,5 +10,17 @@ class TestSumOfDigits(unittest.TestCase):
         result = sum_of_digits(493193)
         self.assertEqual(result, 2)
 
+    def test_single_digit_number3(self): 
+        result = sum_of_digits(16)
+        self.assertEqual(result, 7)
+    
+    def test_multiple_digit_number4(self):
+        result = sum_of_digits(52)
+        self.assertEqual(result, 8)
+
+    def test_multiple_digit_number5(self):
+        result = sum_of_digits(493193)
+        self.assertEqual(result, 1)
+
 if __name__ == '__main__': #chat gpt 
     unittest.main() 
